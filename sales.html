@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Salmon Cookies Hourly Sales</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="img/salmon.png" width=300px />
+      <h1>Salmon Cookies</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="">Our Story</a>
+      <a href="">Meet The Team!</a>
+    </nav>
+  </header>
+  <main>
+    <form id="cookie-stand-form">
+      <fieldset>
+        <legend>New Location</legend>
+        <label for="location">Location City:</label>
+        <input type="text" name="location" required>
+
+        <label for="minCustomers">Minimum Customers Per Hour:</label>
+        <input type="number" name="minCustomers" required>
+
+        <label for="maxCustomers">Maximum Customers Per Hour:</label>
+        <input type="number" name="maxCustomers" required>
+
+        <label for="avgCookies">Average Cookies Per Customer:</label>
+        <input type="number" name="avgCookies" step=".1" required>
+
+        <button>Submit</button>
+      </fieldset>
+    </form>
+    <div id="location-info">
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <p class="copyright">&copy; Kyel White 2022</p>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
